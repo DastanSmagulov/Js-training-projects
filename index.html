@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practice projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/12514ffb2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flexbox-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flexbox-container-1">
+            <div id="flexbox-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        <div class="flexbox-container-2" id="cat-gen"></div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flexbox-rps" id="flexbox-rps-div">
+            <!-- <i class="fas fa-fist-raised fa-10x" id="rock" onсlick="rpsGame(this)"></i>
+            <i class="fas fa-hand-paper fa-10x" id="paper" id="paper" onclick="rpsGame(this)"></i>
+            <i class="fas fa-hand-scissors fa-10x" id="scissors" onclick="rpsGame(this)"></i> -->
+            <img src="./images/noun_Fist_477918.png" width="200px" height="200px" id="rock" onclick="rpsGame(this)">
+            <img src="./images/noun_Paper_88662.png" width="200px" height="200px" id="paper" onclick="rpsGame(this)">
+            <img src="./images/noun_Scissors_477919.png" width="200px" height="200px" id="scissors" onclick="rpsGame(this)">
+
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change the Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
