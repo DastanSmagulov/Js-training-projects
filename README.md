@@ -1,3 +1,3 @@
 # Js-training-projects
 
-Firt try experimenting with pure javascript
+First try experimenting with pure javascript
